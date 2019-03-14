@@ -9,6 +9,9 @@
         <div class="container">
 			<div class="form-horizontal">
 			     
+				 
+				 
+				 
 				<h1 class="text-primary"><center><u><i>registration form</i></u></center></h1>
 				
 					<form name="myform" id="myform" method="post" action="add.php">
