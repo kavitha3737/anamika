@@ -1,5 +1,5 @@
 <?php
-  $conn=mysqli_connect("localhost","root","","employees");
+   include("conn.php");
     if(isset($_POST['name']) && $_POST['name']!="")
     {
 	  //echo "<pre>";print_r($_POST);
