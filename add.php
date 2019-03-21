@@ -16,7 +16,7 @@
          $fname=$_FILES['pic']['name'];
          $tmp_name=$_FILES['pic']['tmp_name'];
          $filename = str_replace(' ', '_', $fname);
-         $dir = 'upload/';
+         $dir = 'upload/'.time();
          $files= $dir.$filename;
          move_uploaded_file($tmp_name,$files);
          $query="INSERT INTO details (name,mobile_no,email,password,photo,gender,skills,hobbies) 
@@ -30,6 +30,7 @@
         }
     }
 ?>
+
 <html>
   <head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -37,7 +38,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body class="bg-danger">
         <div class="container">
 			<div class="form-horizontal">
 			     
