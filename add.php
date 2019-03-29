@@ -164,9 +164,15 @@
 						 
 						</center>
 					</form>
+					<?php
+					if(isset($_GET['id']) && $_GET['id']!="")
+					{
+						?>
 					<img src="<?php if(isset($_GET['id'])){echo $photo;} ?>" width="100px" height="100px"><br>
 					  <?php if(isset($_GET['id'])){echo $photo;} ?>
-					   
+					  <?php
+					}
+                    ?>					
 					</div>
 		</div>
 	<script>
@@ -279,6 +285,7 @@
      
 		
     </script>	
+
     </body>
 </html>  
 	
