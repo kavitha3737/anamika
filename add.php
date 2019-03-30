@@ -168,7 +168,7 @@
 					if(isset($_GET['id']) && $_GET['id']!="")
 					{
 						?>
-					<img src="<?php if(isset($_GET['id'])){echo $photo;} ?>" width="100px" height="100px"><br>
+					 <img src="<?php if(isset($_GET['id'])){echo $photo;} ?>" width="100px" height="100px"><br>
 					  <?php if(isset($_GET['id'])){echo $photo;} ?>
 					  <?php
 					}
@@ -257,7 +257,7 @@
 				 $('#photo').html('');
 			 }
 			  
-			 if(skills == "")
+			 if(skills =="")
 			 {
 				 $('#skill').html("please select your skill");
 				 flag=false;
